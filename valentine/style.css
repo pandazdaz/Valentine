@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+}
+
+h1 {
+    color: #d63384;
+}
+
+/* Cat Container */
+.cat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    font-size: 50px;
+}
+
+/* 2D Cat Animation */
+.male-cat {
+    transition: transform 0.5s ease-in-out;
+    margin-right: 20px;
+}
+.female-cat {
+    margin-left: 20px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 50px;
+}
+button {
+    padding: 15px 25px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.yes-btn {
+    background-color: #28a745;
+    color: white;
+}
+.no-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Heart Animation */
+.heart {
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    opacity: 0;
+    animation: floatUp 1s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
